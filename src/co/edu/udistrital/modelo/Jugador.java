@@ -6,22 +6,22 @@ import java.util.List;
 public class Jugador {
 
     private final String nombre;
-    private final List<Integer> ultimosPuntajes;
+    private final List<Integer> puntajes;
 
     public Jugador(String nombre) {
         this.nombre = nombre;
-        this.ultimosPuntajes = new ArrayList<>();
+        this.puntajes = new ArrayList<>();
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public List<Integer> getUltimosPuntajes() {
-        return ultimosPuntajes;
+    public List<Integer> getPuntajes() {
+        return puntajes;
     }
 
     public void agregarPuntaje(int puntaje) {
-        ultimosPuntajes.add(puntaje);
+        puntajes.add(puntaje);
     }
 }
